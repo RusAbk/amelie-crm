@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('lead_additional_fields', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('lead_id');
+            $table->string('title');
+            $table->string('value');
             $table->timestamps();
         });
     }
