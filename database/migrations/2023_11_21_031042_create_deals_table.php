@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('lead_id');
             $table->foreignId('product_id');
             $table->integer('revenue');
-            $table->bolean('won');
+            $table->boolean('won');
             $table->boolean('lost');
             $table->timestamps();
         });
