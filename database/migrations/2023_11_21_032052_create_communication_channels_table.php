@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('communication_channels', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('color');
             $table->timestamps();
         });
     }
